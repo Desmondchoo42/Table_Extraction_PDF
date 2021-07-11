@@ -56,39 +56,3 @@ with pd.ExcelWriter('test_dbs.xlsx', engine='xlsxwriter') as writer:
         except AttributeError:
             pass
 
-
-# table_c = camelot.read_pdf(file, pages="76")
-# df = table_c[0].df
-# df_c = split_newline(df)
-#
-# for i in range(len(df_c)):
-#     for col in df_c.columns[2:]:
-#         text = df_c[col].iloc[i]
-#
-#         if text.count(' ')>1:
-#             text = ''.join(e for e in text if e.isalnum())
-#             df_c.at[i,col] = text
-#
-# print(df_c)
-
-#
-#
-# for i in range(len(df)):
-#     for col in df.columns:
-#         text = df[col].iloc[i]
-#
-#         if "\n" in text:
-#             text = df[col].iloc[i].split("\n")
-#             for j in range(len(text)):
-#                 df.at[i,j] =  text[j]
-#         elif text.count(' ')>1:
-#             text = ''.join(e for e in text if e.isalnum())
-#             df.at[i,col] = text
-
-
-#
-# table_t = tabula.read_pdf(file,pages=35,multiple_tables=True,stream=True, guess=True)
-# print(len(table_t))
-# print(table_t[0])
-# print(type(table_t[0]))
-#df.to_csv('foo.csv', index=False, header=False)
